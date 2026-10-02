@@ -72,7 +72,7 @@ for (const forbiddenPath of ["_includes", "_layouts", "_scripts", "assets/tailwi
 }
 
 if (exists("_sass")) {
-  const allowedSassOverrides = new Set(["_themes.scss", "_variables.scss"]);
+  const allowedSassOverrides = new Set(["_footer.scss", "_themes.scss", "_variables.scss"]);
   const unexpectedSassFiles = fs.readdirSync(path.join(root, "_sass")).filter((file) => !allowedSassOverrides.has(file));
   if (unexpectedSassFiles.length > 0) {
     failures.push(`Starter may only own the site-specific Sass theme overrides; found: ${unexpectedSassFiles.join(", ")}.`);
