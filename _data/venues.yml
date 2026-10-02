@@ -1,23 +1,23 @@
 "BHI":
   url: https://www.ieee.org/
-  color: "#00629b"
+  color: "#9d174d"
 
 "EDUCON":
   url: https://www.ieee.org/
-  color: "#00629b"
+  color: "#c0266d"
 
 "EMBC":
   url: https://embc.embs.org/
-  color: "#00629b"
+  color: "#a61e5c"
 
 "IPDPSW":
   url: https://www.ipdps.org/
-  color: "#00629b"
+  color: "#7c2d6c"
 
 "Sensors":
   url: https://www.mdpi.com/journal/sensors
-  color: "#009a44"
+  color: "#be185d"
 
 "STAR":
   url: https://www.ieee.org/
-  color: "#00629b"
+  color: "#db2777"
