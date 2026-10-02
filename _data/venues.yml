@@ -1,9 +1,23 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"BHI":
+  url: https://www.ieee.org/
+  color: "#00629b"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"EDUCON":
+  url: https://www.ieee.org/
+  color: "#00629b"
 
-"Vision":
-  color: "#009f36"
+"EMBC":
+  url: https://embc.embs.org/
+  color: "#00629b"
+
+"IPDPSW":
+  url: https://www.ipdps.org/
+  color: "#00629b"
+
+"Sensors":
+  url: https://www.mdpi.com/journal/sensors
+  color: "#009a44"
+
+"STAR":
+  url: https://www.ieee.org/
+  color: "#00629b"
