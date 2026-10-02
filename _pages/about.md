@@ -6,11 +6,12 @@ subtitle: PhD Student in Information Technology at <a href="https://www.polimi.i
 
 profile:
   align: right
-  image:
+  image: portrait-of-susanna-bardini.png
   image_circular: false
-  more_info:
+  more_info: >
+    <p>Politecnico di Milano<br>Milan, Italy</p>
 
-selected_papers: false
+selected_papers: true
 social: true
 
 announcements:
@@ -24,6 +25,14 @@ latest_posts:
   limit:
 ---
 
-Susanna Bardini is a PhD student in Information Technology at Politecnico di Milano. Her research focuses on adaptive systems that integrate smart sensing technologies, heterogeneous IoT networks, and microcontroller-based platforms for personalized health and smart homes.
+I am a PhD student in Information Technology at Politecnico di Milano. I design adaptive systems that connect smart sensing, heterogeneous IoT networks, and edge computing to support personalized health and smarter living environments.
 
-She is particularly interested in full-stack infrastructures that combine physiological signals from wearables with ambient sensor data, leveraging real-time data fusion and federated learning on 5G-enabled edge computing frameworks.
+My research combines physiological signals from wearables with ambient sensor data, using real-time data fusion and federated learning to build privacy-aware, responsive systems.
+
+## Research focus
+
+- **Wearable and ambient sensing** for multimodal health monitoring
+- **Federated learning and edge AI** for distributed, privacy-aware intelligence
+- **Personalized health technologies** for sleep, stress, well-being, and performance
+
+[Explore my publications]({{ '/publications/' | relative_url }}) · [Download my CV]({{ '/assets/pdf/susanna-bardini-cv.pdf' | relative_url }})
