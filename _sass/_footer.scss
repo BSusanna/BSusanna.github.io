@@ -24,6 +24,38 @@ footer.sticky-bottom {
       text-decoration-color: currentColor;
     }
   }
+
+  .footer-social {
+    margin-top: 14px;
+
+    .contact-icons {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.15rem;
+      gap: 8px;
+      justify-content: center;
+
+      a {
+        align-items: center;
+        background: color-mix(in srgb, var(--global-footer-link-color) 10%, transparent);
+        border-radius: 999px;
+        display: inline-flex;
+        height: 40px;
+        justify-content: center;
+        text-decoration: none;
+        transition:
+          background-color 180ms ease,
+          transform 180ms ease;
+        width: 40px;
+
+        &:hover,
+        &:focus-visible {
+          background: color-mix(in srgb, var(--global-footer-link-color) 20%, transparent);
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
 }
 
 footer.sticky-bottom {
@@ -32,4 +64,15 @@ footer.sticky-bottom {
   font-size: 0.85rem;
   padding-bottom: 28px;
   padding-top: 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  footer .footer-social .contact-icons a {
+    transition: none;
+
+    &:hover,
+    &:focus-visible {
+      transform: none;
+    }
+  }
 }
