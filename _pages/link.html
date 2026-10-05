@@ -1,0 +1,80 @@
+---
+layout: null
+title: Links
+permalink: /link/
+description: Find Susanna Bardini's website, research profiles, CV, and contact details.
+nav: false
+---
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    {% include head.liquid %}
+    <link rel="stylesheet" href="{{ '/assets/css/link.css' | relative_url }}">
+  </head>
+  <body class="link-page">
+    {% assign about = site.pages | where: 'url', '/' | first %}
+    {% assign socials = site.data.socials %}
+    <main class="link-profile">
+      <header class="link-profile__header">
+        <img
+          class="link-profile__portrait"
+          src="{{ about.profile.image | prepend: '/assets/img/' | relative_url }}"
+          alt="{{ site.first_name }} {{ site.last_name }}"
+          width="112"
+          height="112"
+        >
+        <h1>{{ site.first_name }} {{ site.last_name }}</h1>
+        <p>PhD Student in Information Technology<br>Politecnico di Milano</p>
+      </header>
+      <nav aria-label="Profile links">
+        <ul class="link-profile__links">
+          <li>
+            <a class="link-profile__website" href="{{ '/' | relative_url }}"><i class="fa-solid fa-globe" aria-hidden="true"></i>Website</a>
+          </li>
+          {% if socials.linkedin_username %}
+            <li>
+              <a href="https://www.linkedin.com/in/{{ socials.linkedin_username | escape }}/">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn
+              </a>
+            </li>
+          {% endif %}
+          {% if socials.scholar_userid %}
+            <li>
+              <a href="https://scholar.google.com/citations?user={{ socials.scholar_userid | uri_escape }}">
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Google Scholar
+              </a>
+            </li>
+          {% endif %}
+          {% if socials.orcid_id %}
+            <li>
+              <a href="https://orcid.org/{{ socials.orcid_id | escape }}"><i class="fa-brands fa-orcid" aria-hidden="true"></i>ORCID</a>
+            </li>
+          {% endif %}
+          {% if socials.github_username %}
+            <li>
+              <a href="https://github.com/{{ socials.github_username | escape }}"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+            </li>
+          {% endif %}
+          {% if socials.cv_pdf %}
+            <li>
+              <a href="{{ socials.cv_pdf | relative_url }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>CV</a>
+            </li>
+          {% endif %}
+          {% if socials.email %}
+            <li>
+              <a href="mailto:{{ socials.email | escape }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
+      {% if site.enable_darkmode %}
+        <button class="link-profile__theme" id="light-toggle" type="button" aria-label="Change color theme">
+          <i class="fa-half-sun-moon" id="light-toggle-system" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon" id="light-toggle-dark" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun" id="light-toggle-light" aria-hidden="true"></i>
+          Change theme
+        </button>
+      {% endif %}
+    </main>
+  </body>
+</html>

@@ -491,6 +491,8 @@ Only the domain changes — the endpoints and every query parameter al-folio sen
 
 ## Creating new pages
 
+This site's standalone profile-link page lives at `/link/`, with content in `_pages/link.html` and page-only styling in `assets/css/link.css`. It reads profile destinations from `_data/socials.yml`, uses the homepage portrait, and inherits the site's light/dark color tokens. Update the existing social values to change destinations; remove a value to hide its button. The page intentionally omits the main navigation and footer.
+
 You can create new pages by adding new Markdown files in the [\_pages](../_pages/) directory. The easiest way to do this is to copy an existing page and modify it. You can choose the layout of the page by changing the [layout](https://jekyllrb.com/docs/layouts/) attribute in the [frontmatter](https://jekyllrb.com/docs/front-matter/) of the Markdown file, and also the path to access it by changing the [permalink](https://jekyllrb.com/docs/permalinks/) attribute.
 
 In `v1.x`, default layout implementations are gem-owned (primarily `al_folio_core` and feature gems). If you need custom layout behavior, create a local override file in your site (for example, create `_layouts/<name>.liquid` in your starter repo). If you want to improve shared runtime behavior for everyone, open a PR in the owning gem repo.
